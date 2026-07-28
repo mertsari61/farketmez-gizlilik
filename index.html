@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fark Etmez — Gizlilik Politikası</title>
+<style>
+  body {
+    max-width: 720px; margin: 0 auto; padding: 32px 20px 80px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; color: #1c1a22; background: #fff;
+  }
+  h1 { font-size: 1.7rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 36px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+  h3 { font-size: 1rem; margin-top: 24px; color: #444; }
+  .tarih { color: #777; font-size: 0.9rem; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 0.93rem; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid #eee; vertical-align: top; }
+  th { background: #faf8fc; font-weight: 600; }
+  code { background: #f4f2f7; padding: 1px 5px; border-radius: 4px; font-size: 0.88em; }
+  a { color: #8B5CF6; }
+  .kutu { background: #faf8fc; border-left: 3px solid #FF4E8E; padding: 12px 16px; margin: 18px 0; border-radius: 0 8px 8px 0; }
+  ul { padding-left: 22px; }
+</style>
+</head>
+<body>
+
+<h1>Fark Etmez — Gizlilik Politikası</h1>
+<p class="tarih">Son güncelleme: 27 Temmuz 2026</p>
+
+<p>Bu politika, <strong>Fark Etmez</strong> mobil uygulamasının (<code>com.farketmez.app</code>)
+hangi verileri işlediğini, neden işlediğini ve bu veriler üzerinde ne tür haklarınız
+olduğunu açıklar. Uygulamayı kullanarak bu politikada anlatılan işlemleri kabul etmiş
+olursunuz.</p>
+
+<div class="kutu">
+  <strong>Kısaca:</strong> Reklam göstermiyoruz, analitik veya izleme aracı kullanmıyoruz,
+  reklam kimliğinizi toplamıyoruz ve verilerinizi kimseye satmıyoruz. Konumunuz yalnızca
+  size yakın mekânları bulmak için kullanılır ve tarafımızca saklanmaz.
+</div>
+
+<h2>1. Veri sorumlusu ve iletişim</h2>
+<p>Uygulama bağımsız bir geliştirici tarafından geliştirilmektedir.
+Gizlilikle ilgili her türlü soru, talep ve veri silme başvurusu için:</p>
+<p><strong>E-posta:</strong> <a href="mailto:farketmezprogram@gmail.com">farketmezprogram@gmail.com</a></p>
+
+<h2>2. İşlenen veriler</h2>
+
+<h3>2.1. Konum bilgisi</h3>
+<p>Size yakın kafe, restoran ve aktivite mekânlarını önerebilmek, mesafe hesaplayabilmek
+ve yol tarifi verebilmek için cihazınızın konumunu kullanırız.</p>
+<ul>
+  <li>Konum izni <strong>isteğe bağlıdır</strong>. İzin vermezseniz uygulama çalışmaya devam
+      eder; yalnızca gerçek mekân önerileri ve yol tarifi devre dışı kalır.</li>
+  <li>Konumunuz yalnızca öneri hazırlanırken kullanılır. <strong>Sunucularımızda
+      saklanmaz</strong>, geçmişe kaydedilmez.</li>
+  <li>Mekân araması ve rota hesabı için koordinatlarınız Google Places ve Google Routes
+      servislerine iletilir.</li>
+</ul>
+
+<h3>2.2. Hesap bilgisi</h3>
+<p>Uygulama <strong>hesap açmadan da kullanılabilir.</strong> Hesap yalnızca verilerinizi
+buluta yedeklemek ve cihaz değiştirdiğinizde geri yüklemek içindir.</p>
+<ul>
+  <li><strong>E-posta ile kayıt:</strong> e-posta adresiniz ve şifreniz Google Firebase
+      Authentication tarafından işlenir. Şifreniz tarafımızdan görülemez.</li>
+  <li><strong>Anonim giriş:</strong> Grup planı özelliğini kullanırken, hiçbir bilgi
+      istemeden arka planda kimliksiz bir hesap oluşturulur. Bu hesap sizi kişisel olarak
+      tanımlamaz.</li>
+</ul>
+
+<h3>2.3. Uygulama içi verileriniz</h3>
+<p>Aşağıdaki veriler <strong>öncelikle cihazınızda</strong> saklanır. Yalnızca hesap
+açtıysanız, hesabınıza bağlı olarak Google Firebase Realtime Database üzerinde yedeklenir:</p>
+<table>
+  <tr><th>Veri</th><th>Ne için</th></tr>
+  <tr><td>Favorileriniz (mekân, film, dizi, oyun)</td><td>Kaydettiklerinize sonra ulaşabilmeniz</td></tr>
+  <tr><td>Plan geçmişiniz</td><td>Geçmiş planları görmeniz ve aynı önerinin tekrarlanmaması</td></tr>
+  <tr><td>Plan anılarınız (puan ve notunuz)</td><td>Yaptığınız planları değerlendirmeniz</td></tr>
+  <tr><td>Gezi rehberi geçmişiniz</td><td>Baktığınız şehirlere tekrar ulaşabilmeniz</td></tr>
+  <tr><td>"Bana Sor" sohbet geçmişiniz</td><td>Konuşmanın devam edebilmesi</td></tr>
+</table>
+<p>Ayrıca yalnızca cihazınızda kalan, sunucuya hiç gönderilmeyen tercihler tutulur:
+karşılama ekranını görüp görmediğiniz, varsayılan ulaşım tercihiniz ve içerik çevirisi
+için yerel önbellek.</p>
+
+<h3>2.4. Yapay zekâ ile üretilen öneriler</h3>
+<p>Öneri, gezi rehberi ve sohbet özelliklerinde metinler Google Gemini servisi ile üretilir.
+Bu sırada seçimleriniz (örneğin bütçe, süre, şehir adı) veya "Bana Sor" ekranına yazdığınız
+metin Google'a iletilir.</p>
+<p>Şehir rehberi gibi <strong>kişisel olmayan</strong> genel cevaplar, servis kotasını korumak
+amacıyla önbelleğe alınır ve diğer kullanıcılara da sunulur. Bu önbellekte
+<strong>kişisel bilgi tutulmaz</strong>; kişiye özel sorular ve sohbet içeriği önbelleğe alınmaz.</p>
+
+<h3>2.5. Grup planı</h3>
+<p>Grup planı özelliğinde 6 haneli bir oda kodu üretilir ve oluşan ortak plan metni, koda
+bağlı olarak geçici şekilde saklanır. Kodu bilen kişiler bu planı görebilir. Odada isim,
+e-posta veya kişisel bilgi paylaşılmaz.</p>
+
+<h3>2.6. Toplamadığımız veriler</h3>
+<ul>
+  <li>Reklam kimliği (Advertising ID) veya benzeri izleme kimlikleri</li>
+  <li>Rehber, fotoğraflar, mesajlar, arama kayıtları veya diğer uygulamalar</li>
+  <li>Analitik / kullanım istatistiği (Analytics, Crashlytics vb. kullanılmamaktadır)</li>
+  <li>Cinsiyet, yaş veya benzeri kimlik nitelikleri</li>
+</ul>
+
+<h2>3. Verilerin paylaşıldığı üçüncü taraflar</h2>
+<p>Verileriniz <strong>satılmaz ve pazarlama amacıyla paylaşılmaz.</strong> Uygulamanın
+çalışabilmesi için yalnızca aşağıdaki servislerle veri alışverişi yapılır:</p>
+<table>
+  <tr><th>Servis</th><th>Ne iletilir</th></tr>
+  <tr><td>Google Firebase (Authentication, Realtime Database)</td><td>Hesap bilgisi ve yedeklenen uygulama verileriniz</td></tr>
+  <tr><td>Google Places / Routes / Maps</td><td>Konum koordinatlarınız ve arama terimleri</td></tr>
+  <tr><td>Google Gemini</td><td>Öneri hazırlamak için gönderilen metinler</td></tr>
+  <tr><td>TMDb</td><td>Film ve dizi içerik sorguları (kişisel veri gönderilmez)</td></tr>
+  <tr><td>RAWG</td><td>Oyun içerik sorguları (kişisel veri gönderilmez)</td></tr>
+</table>
+<p>Bu servisler kendi gizlilik politikalarına tabidir. Ayrıca yasal bir zorunluluk hâlinde
+yetkili makamlarla paylaşım yapılabilir.</p>
+
+<h2>4. Saklama süresi</h2>
+<p>Cihazınızdaki veriler, uygulamayı silene ya da uygulama içinden temizleyene kadar durur.
+Hesabınıza bağlı yedekler, hesabınızı silene kadar saklanır. Konum verisi hiçbir aşamada
+kalıcı olarak saklanmaz.</p>
+
+<h2>5. Verilerinizi silme</h2>
+<p>Verileriniz üzerinde tam kontrole sahipsiniz.</p>
+<ul>
+  <li><strong>Hesabınızı uygulama içinden silebilirsiniz:</strong>
+      <em>Ayarlar &rarr; Veri &rarr; Hesabımı sil</em>. Bu işlem hesabınızı, buluttaki
+      yedeğinizi ve cihazınızdaki tüm verilerinizi <strong>anında ve kalıcı olarak</strong>
+      siler. İşlem geri alınamaz.</li>
+  <li><strong>Yalnızca içerikleri silmek için:</strong> Ayarlar ekranındaki temizleme
+      seçenekleriyle favorilerinizi ve geçmişinizi hesabınızı kapatmadan silebilirsiniz.</li>
+  <li><strong>Uygulamayı kaldırarak:</strong> cihazda tutulan tüm veriler silinir.
+      (Hesabınız varsa bulut yedeğiniz durmaya devam eder; tamamen silmek için yukarıdaki
+      hesap silme adımını kullanın.)</li>
+  <li><strong>Uygulamaya erişiminiz yoksa:</strong>
+      <a href="mailto:farketmezprogram@gmail.com">farketmezprogram@gmail.com</a> adresine
+      hesabınızın e-posta adresiyle talep gönderin. Talebiniz en geç 30 gün içinde
+      sonuçlandırılır.</li>
+</ul>
+
+<h2>6. Haklarınız</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili mevzuat kapsamında;
+kişisel verilerinizin işlenip işlenmediğini öğrenme, bunlara erişme, düzeltilmesini veya
+silinmesini isteme ve işlemeye itiraz etme haklarına sahipsiniz. Bu haklarınızı yukarıdaki
+e-posta adresi üzerinden kullanabilirsiniz.</p>
+
+<h2>7. Çocukların gizliliği</h2>
+<p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek veri
+toplanmaz. 13 yaşından küçük bir kullanıcıya ait veri toplandığını fark edersek söz konusu
+veriyi sileriz.</p>
+
+<h2>8. Güvenlik</h2>
+<p>Sunucuyla tüm iletişim şifreli bağlantı (HTTPS) üzerinden yapılır. Hesabınıza bağlı
+yedeklere yalnızca sizin kimliğinizle erişilebilir. Bununla birlikte internet üzerinden
+yapılan hiçbir aktarımın veya elektronik saklamanın %100 güvenli olduğu garanti edilemez.</p>
+
+<h2>9. Politikadaki değişiklikler</h2>
+<p>Bu politika zaman zaman güncellenebilir. Önemli bir değişiklik olduğunda bu sayfadaki
+"Son güncelleme" tarihi yenilenir. Uygulamayı kullanmaya devam etmeniz, güncel politikayı
+kabul ettiğiniz anlamına gelir.</p>
+
+<h2>10. İletişim</h2>
+<p>Sorularınız için: <a href="mailto:farketmezprogram@gmail.com">farketmezprogram@gmail.com</a></p>
+
+</body>
+</html>
